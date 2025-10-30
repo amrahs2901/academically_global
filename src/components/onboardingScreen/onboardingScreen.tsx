@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Heart, List, User, Users, Image } from 'lucide-react';
 
 const OnboardingScreens = () => {
@@ -145,7 +145,6 @@ const OnboardingScreens = () => {
   ];
 
   const getCardStyle = useCallback((index: number) => {
-    const baseTop = 100; // Starting position in pixels
     const cardSpacing = 40; // How much of the next card peeks out
     
     if (scrollProgress < index) {
